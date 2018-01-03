@@ -28,7 +28,7 @@ module.exports = async function (req, res, filePath) {
                 title: path.basename(filePath),
                 dir: dir ? `/${dir}` : '',
                 files
-            }
+            };
             res.end(template(data));
         }
     } catch (ex) {
